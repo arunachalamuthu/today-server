@@ -15,8 +15,8 @@ const __dirname = dirname(__filename);
 
 app.use(express.json())
 app.use(cors())
-app.use(express.static(path.join(__dirname+'/public/client')))
-app.use(express.static(path.join(__dirname+'/public' )))
+// app.use(express.static(path.join(__dirname+'/public/client')))
+// app.use(express.static(path.join(__dirname+'/public' )))
 app.get('/',(req,res)=>{
 res.send('welcome ')
 }
