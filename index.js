@@ -1,16 +1,16 @@
 import express from 'express'
 import cors from 'cors'
-import { fileURLToPath } from 'url';
-import path from 'path'
-import { dirname } from "path"
+// import { fileURLToPath } from 'url';
+// import path from 'path'
+// import { dirname } from "path"
 const app=express()
 
 
 
 
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
 
 
 app.use(express.json())
