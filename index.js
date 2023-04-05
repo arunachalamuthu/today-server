@@ -3,12 +3,10 @@ import cors from 'cors'
 import { fileURLToPath } from 'url';
 import path from 'path'
 import { dirname } from "path"
+
+
+
 const app=express()
-
-
-
-
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -20,8 +18,8 @@ app.use(cors())
 app.get('/',(req,res)=>{
 // res.send('welcome ')
 
-app.use(express.static(path.resolve(__dirname,'public','client')))
-res.sendFile(path.resolve(__dirname,'public','client','index.html'))
+app.use(express.static(path.resolve(__dirname,'public','client1')))
+res.sendFile(path.resolve(__dirname,'public','client1','index.html'))
 
 }
 )
