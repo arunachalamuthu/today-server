@@ -20,8 +20,8 @@ app.use(cors())
 app.get('/',(req,res)=>{
 // res.send('welcome ')
 
-app.use(express.static(path.resolve(__dirname,'public','client2')))
-res.sendFile(path.resolve(__dirname,'public','client2','index.html'))
+app.use(express.static(path.resolve(__dirname,'public','client')))
+res.sendFile(path.resolve(__dirname,'public','client','index.html'))
 
 }
 )
