@@ -23,6 +23,9 @@ res.sendFile(path.resolve(__dirname,'public','client','index.html'))
 
 }
 )
+app.post('/api',(req,res)=>{
+    res.json({user:req.body.user})
+})
 app.get('/api',(req,res)=>{
     res.json('hi')
 })
